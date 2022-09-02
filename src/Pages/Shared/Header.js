@@ -7,7 +7,7 @@ import user from '../../assets/user.png'
 
 const Header = () => {
     return (
-        <div class="navbar bg-base-100 lg:py-6 py-3">
+        <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -21,9 +21,8 @@ const Header = () => {
       <li><Link to='/men' className='items'>HAPS STORIES</Link></li>
       </ul>
     </div>
-    <Link to='/' id='logo' className='btn btn-ghost'>
-        {/* <img id='logo' src={logo} alt="" /> */}
-        HAPPENSTANCE
+    <Link to='/'>
+        <img className='w-52' src={logo} alt="" />
     </Link>
   </div>
   <div class="navbar-center hidden lg:flex">
